@@ -13,7 +13,7 @@ metric_thread_running = True
 
 class MyHandler(BaseHTTPRequestHandler):
     """
-    HTTP request handler. Ignores the actual request and only responds with
+    HTTP request handler. Doesn't parse the request URL: Always responds with
     the test metrics in the form Prometheus expects them. E.g:
 
     # HELP python_operations_counter Number of Operations Performed.
