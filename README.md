@@ -1,6 +1,6 @@
 # Python HTTP Server to experiment with Prometheus Query Language
 
-The purpose of this Python project is to help learn the Prometheus Query Language (promql). When learning The query language, I found it helpful to be able to generate simple metrics in a controlled fashion. This enabled me to vary the metrics being fed to Prometheus, and observe the impact of those metrics on various promql expressions.
+The purpose of this Python project is to help learn the Prometheus Query Language (promql). When learning the query language, I found it helpful to be able to generate simple metrics in a controlled fashion. This enabled me to vary the metrics being fed to Prometheus, and observe the impact of those metrics on various promql expressions. Doing so with complete control over the source metrics was helpful, as compared to using some other application that produces its own set of complex metrics. 
  
 This project runs a simple Python HTTP Server that serves up three metrics in a controlled manner. The metrics are served on port 7890. I generally run this directly from PyCharm.
  
