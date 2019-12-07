@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+docker run -d --rm \
+ -p 9090:9090 \
+ --name=prometheus \
+ --net="host" \
+ --mount 'type=bind,source=/home/eace/PycharmProjects/metrics-server/prometheus,target=/etc/prometheus' \
+ prom/prometheus
